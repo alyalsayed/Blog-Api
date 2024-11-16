@@ -1,0 +1,1012 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Laravel",
+        "description": "Documentation for the Application API",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost/api",
+            "description": "Laravel Server #1"
+        }
+    ],
+    "paths": {
+        "/documentation": {
+            "get": {
+                "summary": "Display Swagger API page.",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "tags": [
+                    "documentation"
+                ]
+            }
+        },
+        "/oauth2-callback": {
+            "get": {
+                "summary": "Display Oauth2 callback pages.",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "tags": [
+                    "oauth2-callback"
+                ]
+            }
+        },
+        "": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                }
+            }
+        },
+        "/register": {
+            "post": {
+                "summary": "",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "tags": [
+                    "register"
+                ]
+            }
+        },
+        "/login": {
+            "post": {
+                "summary": "",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "tags": [
+                    "login"
+                ]
+            }
+        },
+        "/verify": {
+            "post": {
+                "summary": "",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "tags": [
+                    "verify"
+                ]
+            }
+        },
+        "/logout": {
+            "post": {
+                "summary": "",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "logout"
+                ]
+            }
+        },
+        "/tags": {
+            "get": {
+                "summary": "Display a listing of the resource.",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "tags"
+                ]
+            },
+            "post": {
+                "summary": "Store a newly created resource in storage.",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "tags"
+                ]
+            }
+        },
+        "/tags/{tag}": {
+            "get": {
+                "summary": "Show a specific resource.",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "tag",
+                        "in": "path",
+                        "required": true,
+                        "description": "",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "tags"
+                ]
+            },
+            "put": {
+                "summary": "Update the specified resource in storage.",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "tag",
+                        "in": "path",
+                        "required": true,
+                        "description": "",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "tags"
+                ]
+            },
+            "patch": {
+                "summary": "Update the specified resource in storage.",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "tag",
+                        "in": "path",
+                        "required": true,
+                        "description": "",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "tags"
+                ]
+            },
+            "delete": {
+                "summary": "Remove the specified resource from storage.",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "tag",
+                        "in": "path",
+                        "required": true,
+                        "description": "",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "tags"
+                ]
+            }
+        },
+        "/posts/trashed": {
+            "get": {
+                "summary": "View deleted posts.",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "posts"
+                ]
+            }
+        },
+        "/posts": {
+            "get": {
+                "summary": "Display a listing of the resource (only authenticated user's posts).",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "posts"
+                ]
+            },
+            "post": {
+                "summary": "Update the specified resource in storage.",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "title",
+                                    "body",
+                                    "pinned"
+                                ],
+                                "properties": {
+                                    "title": {
+                                        "type": "string",
+                                        "maxLength": 255
+                                    },
+                                    "body": {
+                                        "type": "string"
+                                    },
+                                    "cover_image": {
+                                        "type": "string",
+                                        "nullable": true,
+                                        "format": "binary",
+                                        "maxLength": 2048
+                                    },
+                                    "pinned": {
+                                        "type": "boolean"
+                                    },
+                                    "tags": {
+                                        "type": "array",
+                                        "items": [
+                                            {
+                                                "type": "integer"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "posts"
+                ]
+            }
+        },
+        "/posts/{post}": {
+            "get": {
+                "summary": "Display the specified resource.",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "post",
+                        "in": "path",
+                        "required": true,
+                        "description": "",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "posts"
+                ]
+            },
+            "put": {
+                "summary": "Update the specified resource in storage.",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "post",
+                        "in": "path",
+                        "required": true,
+                        "description": "",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "title",
+                                    "body",
+                                    "pinned"
+                                ],
+                                "properties": {
+                                    "title": {
+                                        "type": "string",
+                                        "maxLength": 255
+                                    },
+                                    "body": {
+                                        "type": "string"
+                                    },
+                                    "cover_image": {
+                                        "type": "string",
+                                        "nullable": true,
+                                        "format": "binary",
+                                        "maxLength": 2048
+                                    },
+                                    "pinned": {
+                                        "type": "boolean"
+                                    },
+                                    "tags": {
+                                        "type": "array",
+                                        "items": [
+                                            {
+                                                "type": "integer"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "posts"
+                ]
+            },
+            "patch": {
+                "summary": "Update the specified resource in storage.",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "post",
+                        "in": "path",
+                        "required": true,
+                        "description": "",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "title",
+                                    "body",
+                                    "pinned"
+                                ],
+                                "properties": {
+                                    "title": {
+                                        "type": "string",
+                                        "maxLength": 255
+                                    },
+                                    "body": {
+                                        "type": "string"
+                                    },
+                                    "cover_image": {
+                                        "type": "string",
+                                        "nullable": true,
+                                        "format": "binary",
+                                        "maxLength": 2048
+                                    },
+                                    "pinned": {
+                                        "type": "boolean"
+                                    },
+                                    "tags": {
+                                        "type": "array",
+                                        "items": [
+                                            {
+                                                "type": "integer"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "posts"
+                ]
+            },
+            "delete": {
+                "summary": "Remove the specified resource from storage (soft delete).",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "post",
+                        "in": "path",
+                        "required": true,
+                        "description": "",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "posts"
+                ]
+            }
+        },
+        "/posts/restore/{post}": {
+            "patch": {
+                "summary": "Restore a deleted post.",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "post",
+                        "in": "path",
+                        "required": true,
+                        "description": "",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "posts"
+                ]
+            }
+        },
+        "/stats": {
+            "get": {
+                "summary": "Get statistics about users and posts.",
+                "description": "",
+                "deprecated": false,
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "(Unauthorized) Invalid or missing Access Token"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "tags": [
+                    "stats"
+                ]
+            }
+        }
+    },
+    "tags": [],
+    "components": {
+        "schemas": {
+            "Post": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "name": "id",
+                        "type_name": "integer",
+                        "type": "integer",
+                        "collation": null,
+                        "nullable": false,
+                        "default": null,
+                        "auto_increment": true,
+                        "comment": null,
+                        "generation": null,
+                        "example": 1583908072
+                    },
+                    "title": {
+                        "name": "title",
+                        "type_name": "varchar",
+                        "type": "varchar",
+                        "collation": null,
+                        "nullable": false,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null
+                    },
+                    "body": {
+                        "name": "body",
+                        "type_name": "text",
+                        "type": "text",
+                        "collation": null,
+                        "nullable": false,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null,
+                        "example": "a long text"
+                    },
+                    "cover_image": {
+                        "name": "cover_image",
+                        "type_name": "varchar",
+                        "type": "varchar",
+                        "collation": null,
+                        "nullable": true,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null
+                    },
+                    "pinned": {
+                        "name": "pinned",
+                        "type_name": "tinyint",
+                        "type": "tinyint(1)",
+                        "collation": null,
+                        "nullable": false,
+                        "default": "'0'",
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null
+                    },
+                    "user_id": {
+                        "name": "user_id",
+                        "type_name": "integer",
+                        "type": "integer",
+                        "collation": null,
+                        "nullable": false,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null,
+                        "example": 1504126631
+                    },
+                    "deleted_at": {
+                        "name": "deleted_at",
+                        "type_name": "datetime",
+                        "type": "datetime",
+                        "collation": null,
+                        "nullable": true,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null,
+                        "example": "2024-11-16 15:58:20"
+                    },
+                    "created_at": {
+                        "name": "created_at",
+                        "type_name": "datetime",
+                        "type": "datetime",
+                        "collation": null,
+                        "nullable": true,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null,
+                        "example": "2024-11-16 15:58:20"
+                    },
+                    "updated_at": {
+                        "name": "updated_at",
+                        "type_name": "datetime",
+                        "type": "datetime",
+                        "collation": null,
+                        "nullable": true,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null,
+                        "example": "2024-11-16 15:58:20"
+                    }
+                },
+                "required": [
+                    "id",
+                    "title",
+                    "body",
+                    "pinned",
+                    "user_id"
+                ]
+            },
+            "Tag": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "name": "id",
+                        "type_name": "integer",
+                        "type": "integer",
+                        "collation": null,
+                        "nullable": false,
+                        "default": null,
+                        "auto_increment": true,
+                        "comment": null,
+                        "generation": null,
+                        "example": 1012753259
+                    },
+                    "name": {
+                        "name": "name",
+                        "type_name": "varchar",
+                        "type": "varchar",
+                        "collation": null,
+                        "nullable": false,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null
+                    },
+                    "created_at": {
+                        "name": "created_at",
+                        "type_name": "datetime",
+                        "type": "datetime",
+                        "collation": null,
+                        "nullable": true,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null,
+                        "example": "2024-11-16 15:58:20"
+                    },
+                    "updated_at": {
+                        "name": "updated_at",
+                        "type_name": "datetime",
+                        "type": "datetime",
+                        "collation": null,
+                        "nullable": true,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null,
+                        "example": "2024-11-16 15:58:20"
+                    }
+                },
+                "required": [
+                    "id",
+                    "name"
+                ]
+            },
+            "User": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "name": "id",
+                        "type_name": "integer",
+                        "type": "integer",
+                        "collation": null,
+                        "nullable": false,
+                        "default": null,
+                        "auto_increment": true,
+                        "comment": null,
+                        "generation": null,
+                        "example": 1490837214
+                    },
+                    "name": {
+                        "name": "name",
+                        "type_name": "varchar",
+                        "type": "varchar",
+                        "collation": null,
+                        "nullable": false,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null
+                    },
+                    "phone": {
+                        "name": "phone",
+                        "type_name": "varchar",
+                        "type": "varchar",
+                        "collation": null,
+                        "nullable": false,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null
+                    },
+                    "email": {
+                        "name": "email",
+                        "type_name": "varchar",
+                        "type": "varchar",
+                        "collation": null,
+                        "nullable": false,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null
+                    },
+                    "email_verified_at": {
+                        "name": "email_verified_at",
+                        "type_name": "datetime",
+                        "type": "datetime",
+                        "collation": null,
+                        "nullable": true,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null,
+                        "example": "2024-11-16 15:58:20"
+                    },
+                    "password": {
+                        "name": "password",
+                        "type_name": "varchar",
+                        "type": "varchar",
+                        "collation": null,
+                        "nullable": false,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null
+                    },
+                    "verification_code": {
+                        "name": "verification_code",
+                        "type_name": "varchar",
+                        "type": "varchar",
+                        "collation": null,
+                        "nullable": true,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null
+                    },
+                    "is_verified": {
+                        "name": "is_verified",
+                        "type_name": "tinyint",
+                        "type": "tinyint(1)",
+                        "collation": null,
+                        "nullable": false,
+                        "default": "'0'",
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null
+                    },
+                    "remember_token": {
+                        "name": "remember_token",
+                        "type_name": "varchar",
+                        "type": "varchar",
+                        "collation": null,
+                        "nullable": true,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null
+                    },
+                    "created_at": {
+                        "name": "created_at",
+                        "type_name": "datetime",
+                        "type": "datetime",
+                        "collation": null,
+                        "nullable": true,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null,
+                        "example": "2024-11-16 15:58:20"
+                    },
+                    "updated_at": {
+                        "name": "updated_at",
+                        "type_name": "datetime",
+                        "type": "datetime",
+                        "collation": null,
+                        "nullable": true,
+                        "default": null,
+                        "auto_increment": false,
+                        "comment": null,
+                        "generation": null,
+                        "example": "2024-11-16 15:58:20"
+                    }
+                },
+                "required": [
+                    "id",
+                    "name",
+                    "phone",
+                    "email",
+                    "password",
+                    "is_verified"
+                ]
+            }
+        },
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
+            }
+        }
+    }
+}

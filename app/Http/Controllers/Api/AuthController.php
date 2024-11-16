@@ -108,9 +108,7 @@ class AuthController extends Controller
         return ApiResponse::success($data, 'Login successful', 200);
     }
 
-    /**
-     * Verify code sent to user
-     */
+    
   /**
  * Verify code sent to user and get user information
  */
@@ -147,9 +145,9 @@ public function verifyCode(Request $request)
 
     return ApiResponse::error('Invalid verification code or email', 400);
 }
-/* 
+
+     /**
      * Logout user
-     * 
      */
 public function logout(Request $request)
 {
